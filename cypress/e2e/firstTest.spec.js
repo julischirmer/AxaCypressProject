@@ -6,7 +6,7 @@ const { onLoginPage } = require("../page_objects/LoginPage")
 describe('My First Test', () => {
     
     beforeEach('Open application',()=> {
-        // cy.visit('/')
+         cy.visit('/')
         // if(cy.get('.kb-cs-notify-disapprove').should('be.visible')) {
         //     cy.get('.kb-cs-notify-disapprove').click()
         //     cy.get('.kb-cs-notify-container').invoke('attr', 'style').then(style => {
