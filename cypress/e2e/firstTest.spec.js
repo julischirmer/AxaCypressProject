@@ -6,13 +6,13 @@ const { onLoginPage } = require("../page_objects/LoginPage")
 describe('My First Test', () => {
     
     beforeEach('Open application',()=> {
-        cy.visit('/')
-        if(cy.get('.kb-cs-notify-disapprove').should('be.visible')) {
-            cy.get('.kb-cs-notify-disapprove').click()
-            cy.get('.kb-cs-notify-container').invoke('attr', 'style').then(style => {
-                cy.wrap(style).should('contain', 'display: none;')
-            })
-        }
+        // cy.visit('/')
+        // if(cy.get('.kb-cs-notify-disapprove').should('be.visible')) {
+        //     cy.get('.kb-cs-notify-disapprove').click()
+        //     cy.get('.kb-cs-notify-container').invoke('attr', 'style').then(style => {
+        //         cy.wrap(style).should('contain', 'display: none;')
+        //     })
+        // }
     })
 
     it.only('first Test', () => {
